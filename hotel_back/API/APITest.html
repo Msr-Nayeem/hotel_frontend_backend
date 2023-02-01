@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body onload="loadDoc()">
+<h2>API Test</h2>
+<ul>
+  <li id="studentId"></li>
+  <li id="studentName"></li>
+</ul>
+
+<script>
+function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    	var obj_arr = JSON.parse( this.responseText);
+      console.log(obj_arr);
+      
+      document.getElementById("studentId").innerHTML =obj_arr[0].id;
+      document.getElementById("studentName").innerHTML =obj_arr[0].name;
+      
+    }
+  };
+  xhttp.open("GET", "http://127.0.0.1:8000/api/students/list");
+  xhttp.send();
+}
+</script>
+</body>
+</html>
