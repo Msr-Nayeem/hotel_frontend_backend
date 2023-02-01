@@ -1,0 +1,97 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#9b59b6;
+}
+
+::placeholder { 
+  color: black;
+  opacity: 1;
+}
+
+.container{
+  border-radius: 1%;
+  box-shadow: 0 2px 5px black;
+  min-height: 400px ;
+  max-height: 400px;
+  max-width: 320px;
+  min-width: 320px;
+  background-color: darkcyan;
+  margin-top: 50%;  
+}
+
+.hd{
+  cursor: default;
+  border-radius: 4px 4px 0px 0px;
+  color: black;
+  background-color: aliceblue;
+  
+  height: 50px;
+  font-size: 26px;
+  padding: 5%;
+  text-align: center;
+  
+  margin-top: 5px;
+  opacity: 0.6;
+}
+
+input#email{
+  display: block;
+  width: 70%;
+  margin-top: 20%;
+  margin-left: 15%;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  border: 0px;
+  border-bottom: 1px solid;
+  text-align: center;
+  background-color: transparent;
+}
+
+input#password{  
+  display: block;
+  width: 70%;
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-bottom: 5%;
+  padding-bottom: 5px;
+  font-size: 16px;
+  border: 0px;
+  border-bottom: 1px solid;
+  text-align: center;
+  background-color: transparent;
+}
+
+.formCheckInput{
+  margin-left: 10%;
+  font-size: 15px;
+  color: black;
+}
+.logIn{
+  margin-top: 5%;
+  margin-left: 18%;
+  width: 30%;
+  height: 30px;
+  border-radius: 25px;
+  border: 1px solid rgba(0,0,0,0.4);
+  background-color: lightgreen;
+  font-size: 15px;
+  color: black;
+  cursor: pointer;
+  opacity: 0.8;
+}
+#signUp{
+  margin-left: 5%;
+}
+
+
+
+
